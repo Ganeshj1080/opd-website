@@ -1,0 +1,329 @@
+<!-- <div class="row">
+  
+  
+</div> -->
+<div class="row">
+    <div class="col-lg-6 appointmentsHeduld">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row appointmentHead">
+              <div class="col-lg-4 col-md-4 col-sm-12  col-sm-12 ">
+                <div class="card card-body card-widget openSansSemiBd fs-18 todaysAppointments-outer">
+                  <div class="todaysAppointments">Appointments</div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12  col-sm-12 padd0">
+                <div class="card card-body card-widget scheduleandAddNew-outer">
+                  <div class="scheduleandAddNew">                    
+                    <a class="appointment float-right">
+                      <div>+</div> <div>Schedule New<br />Appointment</div>
+                    </a>
+                    <a class="appointment float-right searchIcon">
+                      <div><i class="fa fa-search" aria-hidden="true"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header no-shadow appointments-outer">
+          <div class="appointments">
+              <ul>
+                <li>
+                  <ul class="head">
+                    <li>Time</li>
+                    <li>Name of Patient</li>
+                    <li>Patient ID</li>
+                    <li>Mobile</li>
+                    <li>Status</li>
+                  </ul>
+                </li>
+                <li class="morningSession-outer">
+                  <ul>
+                    <li>
+                      <div>
+                        <a (click)="toggleMsession()" [class]="show_dialog1 ? 'active' : '' " class="morningSession">Morning Session (9:00 am to 12:00 pm)<span class="caret float-right"></span></a>
+                      </div>                    
+                    </li>
+                  </ul>
+                  <ul *ngIf="show_dialog1" class="morningSessionDetails-outer">
+                    <li>
+                      <ul class="morningSessionDetails">
+                        <li>9:00</li>
+                        <li>Sachin Pachwadkar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>9:15</li>
+                        <li>Amisha Narkhede</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>9:30</li>
+                        <li>Sangita Bansode</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="deactive"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>9:45</li>
+                        <li>Martand Bapaye</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:00</li>
+                        <li>Rahul Joshi</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:15</li>
+                        <li>Rani Mujumdar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:30</li>
+                        <li>Payal Deshmukh</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:45</li>
+                        <li>Bina Gupta</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:00</li>
+                        <li>Nayana Raghavan</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:15</li>
+                        <li>Rosy Pisolkar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:30</li>
+                        <li>Ranganthan V</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:45</li>
+                        <li>Issac Mujawar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>12:00</li>
+                        <li>Bindiya Goswami</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="morningSession-outer">
+                  <ul>
+                    <li>
+                      <div>
+                        <a (click)="toggleEsession()" [class]="show_dialog2 ? 'active' : '' " class="morningSession">Evening Session (5:00 am to 8:00 pm) <span class="caret float-right"></span></a>
+                      </div>                    
+                    </li>
+                  </ul>
+                  <ul *ngIf="show_dialog2" class="morningSessionDetails-outer">
+                    <li>
+                      <ul class="morningSessionDetails">
+                        <li>9:00</li>
+                        <li>Sachin Pachwadkar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>9:15</li>
+                        <li>Amisha Narkhede</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>9:30</li>
+                        <li>Sangita Bansode</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="deactive"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>9:45</li>
+                        <li>Martand Bapaye</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:00</li>
+                        <li>Rahul Joshi</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:15</li>
+                        <li>Rani Mujumdar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:30</li>
+                        <li>Payal Deshmukh</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>10:45</li>
+                        <li>Bina Gupta</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:00</li>
+                        <li>Nayana Raghavan</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:15</li>
+                        <li>Rosy Pisolkar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:30</li>
+                        <li>Ranganthan V</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>11:45</li>
+                        <li>Issac Mujawar</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                      <ul class="morningSessionDetails">
+                        <li>12:00</li>
+                        <li>Bindiya Goswami</li>
+                        <li>RG02344</li>
+                        <li>95440 09857</li>
+                        <li><span class="active"></span></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>              
+              </ul>
+          </div>
+        </div>            
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row appointmentHead">
+            <div class="col-lg-4 col-md-4 col-sm-12  col-sm-12">
+              <div class="card card-body card-widget inventory-outer fs-18">
+                <div class="todaysAppointments">Inventory</div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12  col-sm-12 padd0">
+              <div class="card card-body card-widget scheduleandAddNew-outer">
+                <div class="scheduleandAddNew inventory">
+                  <a class="appointment float-right">
+                    <div>+</div> <div>Add New<br />inventory</div>
+                  </a>
+                  <a class="appointment float-right searchIcon">
+                      <div><i class="fa fa-search" aria-hidden="true"></i></div>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header no-shadow inventory-list">
+          <div class="appointments inventory">
+            <ul>
+              <li>
+                <ul class="head">
+                  <li>Name Of Inventory</li>
+                  <li>Qty</li>                
+                </ul>
+              </li>
+              <li class="morningSession-outer">              
+                <ul class="morningSessionDetails">
+                  <li>Diphtheria, tetanus & acellular pertussis3</li>
+                  <li>3 nos</li>                    
+                </ul>
+                <ul class="morningSessionDetails">
+                  <li>Pneumococcal conjugate5</li>
+                  <li>3 nos</li>                    
+                </ul>
+                <ul class="morningSessionDetails">
+                  <li>Diphtheria, tetanus & acellular pertussis3</li>
+                  <li>3 nos</li>                    
+                </ul>
+                <ul class="morningSessionDetails">
+                  <li>Pneumococcal conjugate5</li>
+                  <li>3 nos</li>                    
+                </ul>
+                <ul class="morningSessionDetails">
+                  <li>Diphtheria, tetanus & acellular pertussis3</li>
+                  <li>3 nos</li>                    
+                </ul>
+                <ul class="morningSessionDetails">
+                  <li>Pneumococcal conjugate5</li>
+                  <li>3 nos</li>                    
+                </ul>
+                <ul class="morningSessionDetails">
+                  <li>Diphtheria, tetanus & acellular pertussis3</li>
+                  <li>3 nos</li>                    
+                </ul>
+                <ul class="morningSessionDetails">
+                  <li>Pneumococcal conjugate5</li>
+                  <li>3 nos</li>                    
+                </ul>
+              </li>              
+            </ul>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>

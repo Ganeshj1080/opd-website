@@ -1,0 +1,383 @@
+@import '../../../styles-mixins';
+
+.fs-18 {font-size: 18px;}
+.profileSection {
+    margin: 0 0 8px;
+    .profileSection ul {
+      list-style: none;
+      margin: 0;padding: 0;
+      .profileSection > ul > li > a {
+        display: block;
+        font-family: $font-gillSans-semiBold;
+        font-size: $font-size-12;
+        color: #fff;
+        .profileSection ul li a:after {
+          display: block;
+          content: '';
+          border: 0;
+        }
+        .profileSection ul > li a > figure {
+          display: block;
+          height: 44px;
+          width: 44px;
+          line-height: 44px;
+          text-align: center;
+          margin: 0 5px 0 0;
+          float: left;
+          .profileSection ul > li > a figure img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto !important;
+          }
+        }
+        .profileSection ul > li > a span {
+          display: block;
+          float: left;
+          margin: 14px 0 0 3px;
+        }
+      }
+      .profileSection ul li .dropdown-item.active, 
+      .profileSection ul li .dropdown-item:active {
+        background: #4ce4ff;
+      } 
+    }
+  }
+
+.searchForm {
+  display: block;
+  .searchForm form input {
+    border: 0;
+    border-radius: 20px;
+    padding: 5px 15px;
+    .searchForm form input:focus {
+      outline: transparent;
+    } 
+  }
+}
+.inventory-outer,
+.inventory-list,
+.todaysAppointments-outer,
+.appointments-outer,
+.scheduleandAddNew-outer {
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+.appointmentHead {margin: 4px 0 0 0;}
+.inventory-list,
+.appointments-outer {margin: 8px 0 0 0;}
+.scheduleandAddNew {
+   a.appointment {
+    display: block;    
+      div {
+      font-family: $font-opensans;
+      font-size: 11px;
+      color: #333;      
+    }
+    & > div:first-of-type {
+      height: 40px;
+      width: 40px;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      font-family: $font-gillSans;
+      font-size: 36px;
+      margin: 0 10px 0 0;
+      color: $clr-white;
+      float: left;
+    }
+    &:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+    &.appointment {
+      div:first-of-type {
+        background: $clr-dark-grey;
+        color: $clr-white;
+      }
+    }&.searchIcon.appointment{
+      text-align: center;
+      div {
+        background: transparent;
+        border: 1px solid #999;
+        color: #999;
+        font-size: $font-size-24;
+      }
+    }
+    &.patient {
+      div:first-of-type {
+        background: $clr-orange;
+        color: $clr-white;
+      }
+    }
+  }& a:first-of-type {
+    width: 130px;
+  }
+}
+.inventory {
+  .appointment:first-of-type {
+    width: 105px;
+  }
+}
+.todaysAppointments {
+  font-family: $font-Opensans-semibold;
+  margin: 7px 0 0 0;
+}
+.scheduleandAddNew {width: 100%;}
+
+
+.appointments {
+  border: 1px solid #959595;
+  width: 100%;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    li{
+      ul.head{
+        background: #d3d3d3;
+        padding: 13px 0;
+        li {
+          text-transform: none;
+          border: 0;
+          font-family: $font-Opensans-semibold;
+          font-size: 16px;
+          float: left;
+          &:first-child {
+            width: 12%;
+            padding-left: 18px;
+          }
+          &:nth-child(2) {
+            width: 35%;
+          }
+          &:nth-child(3) {
+            width: 20%;
+          }
+          &:nth-child(4) {
+            width: 20%;
+          }
+          &:nth-child(5) {
+            width: 13%;
+            padding-right: 18px !important;
+            text-align: center;
+          }
+          &.morningSession-outer {
+            ul {
+              li{
+                display: none;
+              }
+            }
+          }
+        }&:after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+      }&:after {
+        display: block;
+        content: '';
+        clear: both;
+      }
+    }
+  }
+}
+.morningSession-outer {
+  ul {
+    li {
+      width: 100%;
+      padding: 12px 18px;
+      background: #ebebeb;
+      border-top: 1px solid #acacac;
+      div {
+        a {
+          color: #333;
+          font-size: $font-size-12;
+          font-family: $font-Opensans-semibold;
+          text-transform: none;
+          display: block;
+          position: relative;          
+        }
+      }
+    }
+  }
+}
+.morningSessionDetails-outer {
+    li {
+      padding: 0 !important;
+      ul {
+        border-bottom: 1px solid #acacac;
+        li{
+          font-size: 14px;
+          text-transform: none;
+          border: 0;
+          font-family: $font-Opensans-semibold;
+          float: left;
+          background: $clr-white;
+          padding: 13px 0 !important;
+          &:first-child {
+            width: 12%;
+            padding-left: 18px !important;
+          }
+          &:nth-child(2) {
+            width: 35%;
+          }
+          &:nth-child(3) {
+            width: 20%;
+          }
+          &:nth-child(4) {
+            width: 20%;
+          }
+          &:nth-child(5) {
+            width: 13%;
+            padding-right: 18px !important;
+          }
+          span{
+            margin: 0 auto;
+            &.active {
+              height: 21px;
+              width: 21px;
+              border: 1px solid #00bd24;
+              border-radius: 100%;
+              display: block;
+              color: #00bd24;
+              font-weight: normal;
+              position: relative;
+            }&::after{
+              content: "";
+              background-color: transparent;
+              position: absolute;
+              left: 7px;
+              top: 3px;
+              width: 5px;
+              border-bottom: 2px solid #00bd24;
+              height: 11px;
+              border-right: 2px solid #00bd24;
+              transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+            }
+            &.deactive {
+              height: 21px;
+              width: 21px;
+              border: 1px solid #ff0000;
+              border-radius: 100%;
+              display: block;
+              position: relative;
+              &:after,
+              &:before {
+                position: absolute;
+                left: 9px;
+                content: ' ';
+                height: 13px;
+                width: 1px;
+                background-color: #ff0000;
+                top: 3px;
+                border: 0;
+              }&:before {
+                transform: rotate(45deg);
+              }&:after {
+                transform: rotate(-45deg);
+              }
+            }
+          }           
+        }
+        &:after{
+          clear: both;
+          display: block;
+          content: '';
+        }
+      }
+    }
+  }
+  .inventory {
+    ul {
+      li{
+        ul.head{
+          li {
+            &:first-child{
+              width: 85%;
+            }
+            &:last-child{
+              width: 15%;
+            }
+          }
+        }
+        &:last-child{
+          ul{
+            li {
+              float: left;
+              background: $clr-white;
+              font-family: $font-Opensans-semibold;
+              font-size: 14px;
+              color: #333;
+              padding: 12px 18px;
+              text-transform: none;
+              &:first-child{
+                width: 85%;
+                padding-right: 0 !important;
+              }
+              &:last-child{
+                width: 15%;
+                padding-left: 0 !important;
+              }
+            }
+          }
+        }  
+      }
+    }
+  }
+
+@media (min-width:1024px) and (max-width:1600px){
+  .todaysAppointments {
+    font-size: 16px;    
+  }
+  .scheduleandAddNew a {
+    display: block;
+    float: right;
+  }
+  .scheduleandAddNew a span {
+    font-family: $font-opensans;
+    font-size: 11px;
+    color: #333;
+    float: left;
+    width: 65%;
+    &:first-of-type{
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      font-size: 30px;
+    }
+  }
+  .appointmentHead .inventory-outer {
+    margin: 0;
+  }
+  .inventory ul li:last-child ul li:first-child,
+  .morningSessionDetails-outer li ul li:first-child,
+  .appointments ul li ul.head li:nth-child(1){
+    padding-left: 7px !important;
+  }
+  .inventory ul li:last-child ul li:last-child,
+  .morningSessionDetails-outer li ul li:last-child,
+  .appointments ul li ul.head li:nth-child(5) {
+    padding-right: 7px !important;
+  }
+  .inventory ul li:last-child ul li,
+  .morningSessionDetails-outer li ul li,
+  .appointments ul li ul.head li {
+    font-size: 13.5px;
+  }
+}
+@media (min-width:768px) and (max-width:1024px) and (orientation:portrait){
+  .scheduleandAddNew a{
+  }  
+}
+@media (min-width:768px) and (max-width:1024px) {
+  .opd-main-wrapper.theme-light .sidebar-panel.ng-sidebar {
+    overflow: visible;
+  }
+  .custom-navbar .navbar-nav .nav-item {
+    margin: 0 0 0 17px;
+  }
+}

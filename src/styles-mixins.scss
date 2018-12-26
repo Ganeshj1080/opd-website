@@ -1,0 +1,176 @@
+/* Variables (start here)*/
+
+// font's veriable
+$font-opensans: OpenSans;
+$font-opensans-bold: OpenSans-Bold;
+$font-Opensans-semibold: OpenSans-Semibold;
+$font-gillSans: GillSans;
+$font-gillSans-bold: GillSans-Bold;
+$font-gillSans-light: GillSans-Light;
+$font-gillSans-semiBold: GillSans-SemiBold;
+$font-avenir-book: Avenir-Book; 
+$font-RockwellBold: RockwellBold; 
+$font-RockwellRegular: RockwellRegular; 
+$font-size-12: 12px;
+$font-size-30: 30px;
+$font-size-18: 18px;
+$font-size-16: 16px;
+$font-size-28: 28px;
+$font-size-24: 24px;
+$text-transform-upprcase: uppercase;
+$text-transform-lowercase: lowercase;
+$text-transform-none: none;
+$text-transform-capitalize: capitalize;
+$float-left: left;
+$float-right: right;
+$padding-zero: 0px;
+
+// color's veriable
+$clr-white: #fff;
+$clr-blue:#0194af;
+$clr-light-blue: #4ce4ff;
+$clr-orange: #ff8400;
+$clr-light-black: #333;
+$clr-black: #000;
+$clr-dark-grey: #999;
+$clr-light-grey:#666;
+$clr-lighter-grey:#6a6a6a;
+   
+
+body{
+    background-color: $clr-white;
+    font-family: $font-opensans;
+}
+
+/* Variables (end here)*/
+
+
+
+/*  Mixins (start here) */
+
+@mixin box-shadow($left, $top, $radius, $color) {
+	box-shadow: $left $top $radius $color;
+	-webkit-box-shadow: $left $top $radius $color;
+	-moz-box-shadow: $left $top $radius $color;
+}
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin primary-btn-style{
+    border: 1px solid $clr-orange;
+    background-color: $clr-orange;
+    cursor: pointer;
+    padding: 6px 22px ;
+    font-family: $font-opensans-bold;
+    font-size: 21px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.opd-primary-btn.btn-lg{
+    @include primary-btn-style;
+    // @include box-shadow(0, 0, 15px,#000 );
+    // @include border-radius(3px);
+    
+    &:hover{
+        color:$clr-white; 
+    }
+}
+.opd-primary-btn.btn-md{
+    @include primary-btn-style;
+    font-size: 16px;
+    padding: 5px 25px;
+    &:hover{
+        color:$clr-white; 
+    }
+}
+.opd-secondary-btn{
+    @include primary-btn-style;
+    background-color: $clr-dark-grey;   
+    color: $clr-white;
+    border-color: $clr-dark-grey;
+
+    &:hover{
+        color: $clr-white;
+    }
+}
+.opd-secondary-btn.btn-md{
+    @include primary-btn-style;
+    background-color: $clr-dark-grey;   
+    color: $clr-white;
+    border-color: $clr-dark-grey;
+    font-size: 16px;
+    padding: 5px 25px;
+
+    &:hover{
+        color:$clr-white; 
+    }
+}
+/*  Mixins (end here) */  
+
+
+
+/*  Extend/Inheritance (start here) */
+
+%opd-alert {
+    border: 1px solid ;
+    padding: 10px;
+    color: #333;
+}
+.opd-error-message {
+    @extend %opd-alert;
+    background-color: red;
+}
+.opd-success-message {
+    @extend %opd-alert;
+    background-color: green;
+}
+
+/*  Extend/Inheritance (end here) */
+                                                                      
+.success{
+    color: #01cd28;
+    height: 73px;
+    width: 73px;
+    border: 4px solid #01cd28;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 65px;
+    position: relative;
+    span{
+        font-size: 30px;
+        border-left: 5px solid #01cd28;
+        border-bottom: 5px solid #01cd28;
+        transform: rotate(-45deg);
+        height: 18px;
+        display: block;
+        width: 50%;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+} 
+.headingUpprcase18 {
+    font-size: $font-size-18;
+    text-transform: $text-transform-upprcase;
+    color: $clr-light-black;
+    font-family: $font-opensans-bold;
+}
+.headingLowercase16 {
+    font-size: $font-size-18;
+    // text-transform: $text-transform;
+    color: $clr-light-black;
+}
+.left {
+    float: $float-left;
+}
+.right {
+    float: $float-right;
+}
+.padd0 {padding: $padding-zero;}
+.paddleft0 {padding-left: $padding-zero;}
+.paddright0 {padding-right: $padding-zero;}
+.paddtop0 {padding-top: $padding-zero;}
+.paddbottom0 {padding-bottom: $padding-zero;}

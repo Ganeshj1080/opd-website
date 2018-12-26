@@ -1,0 +1,126 @@
+<div class="container-fluid home-wrapper">
+  <div class="row">
+    <div class="col-12">
+      <!-- Header (start here) -->
+      <header class="row header-wrapper">
+        <div class="col-4 col-lg-3 col-xl-3 logo-section">
+          <h4>Copious</h4>
+        </div>
+        <div class="col-8 col-lg-9 col-xl-9 header-content-section">
+          <h6>We care for patients..</h6>
+          <h6>Take care the way you can!!</h6>
+        </div>
+      </header>
+
+      <!-- Sub header(start here) -->
+      <header class="row sub-header">
+        <div class="col-12">
+          <p>Welcome to the World of Health Care</p>
+          <button class="btn-primary opd-secondary-btn btn-md" (click)="opdSignIn();">
+            Sign In
+          </button>
+        </div>
+      </header>
+
+      <!-- Content section (start here) -->
+      <section class="row content-wrapper">
+        <!-- Clinicians and Section (start here) -->
+        <div class="col-12 dashboardWrapper" *ngIf="cliniciansFamilySection">
+          <div class="row">
+            <div class="col-6">
+              <h2>Clinicians</h2>
+              <p>Practice with ease. </p>
+              <p>Find all patients at your fingertips.</p>
+              <p><a>Learn more...</a></p>
+              <button class="btn btn-primary opd-primary-btn btn-lg" [routerLink]="['/doctor/profile/BasicInformation']">
+                Get Started
+              </button>
+            </div>
+            <div class="col-6">
+              <h2>Family Heads</h2>
+              <p>Tap your phone to get</p>
+              <p>your family on-boarded</p>
+              <p><a>Learn more...</a></p>
+              <button class="btn btn-primary opd-primary-btn btn-lg">
+                Download App
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Login (start here) -->
+        <div class="col-12 loginSec" *ngIf="loginSec">
+          <h1 class="heading-text">Login to access your account</h1>
+          <div class="login-wrapper">
+            <form>
+              <div class="form-group animateLabel">
+                <input type="email" class="form-control  animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                <label>Enter Email ID</label>
+              </div>
+              <button type="button" class="btn-primary opd-primary-btn btn-md w125 login-btn" (click)="loginBtn()">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Pawword (start here) -->
+        <div class="col-12 password-wrapper" *ngIf="passwordSec">
+          <h1 class="heading-text">enter password to login in your account</h1>
+          <h6 class="email-id">rashmi.gapchup@gmail.com</h6>
+          <div class="login-wrapper">
+            <form>
+              <div class="form-group animateLabel">
+                <input type="password" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                <label>Enter Password</label>
+                <a class="forgot-password">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn-primary opd-primary-btn btn-md w125 login-btn" (click)="passwordLoginBtn()">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- OPT (start here) -->
+        <div class="col-12 otp-wrapper password-wrapper optSec" *ngIf="optSec">
+          <h1 class="heading-text">enter OTP to login in your account</h1>
+          <h6 class="email-id">rashmi.gapchup@gmail.com</h6>
+          <p class="otp-sent">We have sent an OTP to your registered number XXX-XXX-X413</p>
+          <div class="login-wrapper">
+            <form>
+              <div class="form-group">
+                <label>Enter OTP</label>
+
+                <div class="row">
+                  <div class="col-2">
+                    <input type="password" maxlength="1" class="form-control otp-textbox" placeholder="*">
+                  </div>
+                  <div class="col-2">
+                    <input type="password" maxlength="1" class="form-control otp-textbox" placeholder="*">
+                  </div>
+                  <div class="col-2">
+                    <input type="password" maxlength="1" class="form-control otp-textbox" placeholder="*">
+                  </div>
+                  <div class="col-2">
+                    <input type="password" maxlength="1" class="form-control otp-textbox" placeholder="*">
+                  </div>
+                  <div class="col-2">
+                    <input type="password" maxlength="1" class="form-control otp-textbox" placeholder="*">
+                  </div>
+                  <div class="col-2">
+                    <input type="password" maxlength="1" class="form-control otp-textbox" placeholder="*">
+                  </div>
+                </div>
+
+                <a class="forgot-password">Resend OTP?</a> <span>if you don't receive it in 2 mins.</span>
+              </div>
+              <button type="button" class="btn-primary opd-primary-btn btn-md w125 login-btn" routerLink="/doctor/dashboard">Login</button>
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+    </div>
+  </div>
+</div>

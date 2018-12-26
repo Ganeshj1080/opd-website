@@ -1,0 +1,99 @@
+@import "../../../../styles-mixins.scss";
+
+.basic-info-wrapper{
+    .form-group{
+        margin-bottom: 30px;
+        .form-check-inline{
+            margin-top: 3px;            
+            .form-check-label {
+                padding-left: 1.8rem;
+                &.active-gender {
+                    color: #495057;                    
+                }
+            }
+            .form-check-input {
+                height: 20px;
+                width: 20px;
+                margin: 4px 0px 0 -29px;
+            }
+        }& + .form-check-inline {
+            margin-left: 47px;
+        }
+        .alert-danger {
+            display: none;       
+        }                
+    }
+    .terms-line{
+        color: #666;
+        font-size: 16px;
+    }
+    .footer-part{
+        margin-top: 25px;
+        text-align: center;
+        position: relative;
+        .clear-from-btn{
+            margin-left: 15px;
+        }
+    }
+    .req-otp{
+        color: $clr-orange;
+    }
+    .refile-info{
+        color: $clr-light-grey;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .animateLabel {
+        position: relative;
+        padding: 32px 0 0 0;
+        .animateInput {
+            position: relative;
+            background: transparent !important;
+            z-index: 11;
+            transition: all 0.2s ease;
+            &:focus {
+                outline: none;
+                border-color: #4de4ff !important;
+                
+                +label.animatedLabel {
+                  color:#0394af !important;
+                  top: 0;
+                  left:0;
+                }
+              }
+            +label{
+                position: absolute;
+                top: 39px;
+                z-index: 1;
+                left: 10px;
+                transition: all 0.2s ease;
+            }
+            &+label.animatedLabel{
+                top: 0;
+                color:#0394af;
+                font-size: 14px;
+                left:0;
+            }
+        } 
+    } 
+    .thankYouSection {
+        .successOuer {
+            margin: 5px 0 12px 0;
+        }
+        .inner-header {
+            font-family: $font-RockwellRegular !important;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        p{
+            font-size: $font-size-30;
+            b{
+                font-family: $font-opensans-bold;
+            }
+        }
+    }
+}  
+
+.form-check-inline + .form-check-inline {
+    margin-left: 47px;
+}

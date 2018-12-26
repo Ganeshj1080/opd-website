@@ -1,0 +1,241 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css';
+@font-face {
+    font-family: 'OpenSans';
+    src: url('assets/fonts/opd-fonts/OpenSans.eot');
+    src: url('assets/fonts/opd-fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/OpenSans.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/OpenSans.woff') format('woff'),
+        url('assets/fonts/opd-fonts/OpenSans.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('assets/fonts/opd-fonts/OpenSans-Bold.eot');
+    src: url('assets/fonts/opd-fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/OpenSans-Bold.woff') format('woff'),
+        url('assets/fonts/opd-fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('assets/fonts/opd-fonts/OpenSans-Semibold.eot');
+    src: url('assets/fonts/opd-fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/OpenSans-Semibold.woff') format('woff'),
+        url('assets/fonts/opd-fonts/OpenSans-Semibold.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GillSans';
+    src: url('assets/fonts/opd-fonts/GillSans.eot');
+    src: url('assets/fonts/opd-fonts/GillSans.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/GillSans.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/GillSans.woff') format('woff'),
+        url('assets/fonts/opd-fonts/GillSans.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/GillSans.svg#GillSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillSans-Bold';
+    src: url('assets/fonts/opd-fonts/GillSans-Bold.eot');
+    src: url('assets/fonts/opd-fonts/GillSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/GillSans-Bold.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/GillSans-Bold.woff') format('woff'),
+        url('assets/fonts/opd-fonts/GillSans-Bold.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/GillSans-Bold.svg#GillSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillSans-Light';
+    src: url('assets/fonts/opd-fonts/GillSans-Light.eot');
+    src: url('assets/fonts/opd-fonts/GillSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/GillSans-Light.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/GillSans-Light.woff') format('woff'),
+        url('assets/fonts/opd-fonts/GillSans-Light.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/GillSans-Light.svg#GillSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillSans-SemiBold';
+    src: url('assets/fonts/opd-fonts/GillSans-SemiBold.eot');
+    src: url('assets/fonts/opd-fonts/GillSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/GillSans-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/GillSans-SemiBold.woff') format('woff'),
+        url('assets/fonts/opd-fonts/GillSans-SemiBold.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/GillSans-SemiBold.svg#GillSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('assets/fonts/opd-fonts/Avenir-Book.eot');
+    src: url('assets/fonts/opd-fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/Avenir-Book.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/Avenir-Book.woff') format('woff'),
+        url('assets/fonts/opd-fonts/Avenir-Book.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/Avenir-Book.svg#Avenir-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RockwellBold';
+    src: url('assets/fonts/opd-fonts/Rockwell-Bold.eot');
+    src: url('assets/fonts/opd-fonts/Rockwell-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/Rockwell-Bold.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/Rockwell-Bold.woff') format('woff'),
+        url('assets/fonts/opd-fonts/Rockwell-Bold.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/Rockwell-Bold.svg#Rockwell-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RockwellRegular';
+    src: url('assets/fonts/opd-fonts/Rockwell.eot');
+    src: url('assets/fonts/opd-fonts/Rockwell.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/opd-fonts/Rockwell.woff2') format('woff2'),
+        url('assets/fonts/opd-fonts/Rockwell.woff') format('woff'),
+        url('assets/fonts/opd-fonts/Rockwell.ttf') format('truetype'),
+        url('assets/fonts/opd-fonts/Rockwell.svg#Rockwell') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+body, p, input, textarea, select{
+    font-family: 'OpenSans';
+}
+.opd-main-wrapper{
+    background-color: #fff;
+}
+
+.w125{width: 125px;}
+
+h1.heading-text{
+    text-transform: uppercase;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+    font-size: 24px;
+}
+.inner-header{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0 30px 0
+}
+
+.form-group label{
+    display: block;
+    color: #999;
+    font-size: 16px;
+    text-align: left;
+}
+.form-group input[type=number],
+.form-group input[type=password],
+.form-group input[type=email],
+.form-group input[type=text]{
+    font-size: 24px;
+    padding: 4px 10px;
+}
+.form-control,
+.opd-main-wrapper .form-control{
+    background-color: #fff !important;
+    border-color:#ccc !important; 
+}
+.form-group input.otp-textbox{
+    padding: 19px 10px;
+    text-align: center;
+}
+/*--  custom-droupdown (Start here) --*/
+.custom-droupdown {
+    width: 100%;    
+}
+.custom-droupdown .cust-toggle{
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.custom-droupdown .cust-toggle::after{
+    color: #a2acbf
+}
+.custom-droupdown .cust-toggle .selected-name{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    color: #999;
+    font-size: 16px;
+    padding: 4px 10px;
+}
+.custom-droupdown .cust-toggle .caret{
+    display: inline-block;
+    margin-left: -15px;
+    margin-top: 19px;
+}
+.custom-droupdown .dropdown-menu.show {
+    width: 100%;
+    padding: 0;
+}
+.custom-droupdown .dropdown-menu .dropdown-item{
+    padding: 7px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #161d28;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.custom-droupdown .btn:focus,
+.custom-droupdown .btn.focus{
+    outline: none;
+    box-shadow: none !important;
+}
+
+/*--  custom-droupdown (End here) --*/
+
+.calendarbg {
+    position: absolute;
+    top: 39px;
+    right: 11px;
+    font-size: 24px;           
+}
+.confirmOTP {
+    color: #666;
+    font-size: 16px; 
+    position: absolute;
+    right: 20px;
+}
+.confirmOTP:hover {
+    color: #4ce4ff;
+}
+.confirmOTP span {    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border: 1px solid;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 31px;
+}
+.confirmOTP span i {
+    margin: 0 0 0 3px;
+}

@@ -1,0 +1,344 @@
+<div class="container-fluid basic-info-wrapper">
+  <div class="row">
+
+    <!--Your Practice section(start here) -->
+    <div class="col-12" *ngIf="yourPracticeSec">
+      <h3 class="inner-header">let us know about your practice</h3>
+      <form>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)" >
+                  <label>Your First Name</label>
+                  <p role="alert" class="alert alert-danger alert-dismissible">Text field is required</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Last Name</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-10">
+                    <div class="form-group animateLabel">
+                      <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                      <label>Date of Birth</label>
+                      <!-- <ngb-datepicker [displayMonths]="displayMonths" [navigation]="navigation"></ngb-datepicker> -->
+                      <i _ngcontent-c19="" class="fa fa-calendar-o calendarbg"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label>Gender</label>
+                  <div class="form-check-inline">
+                    <label class="form-check-label  {{gender === 'Male' ? 'active-gender' : '' }}">
+                      <input type="radio" class="form-check-input" name="gender" [(ngModel)]="gender" value="Male">Male</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label  {{gender === 'Female' ? 'active-gender' : '' }}">
+                      <input type="radio" class="form-check-input"  name="gender" [(ngModel)]="gender" value="Female" checked="checked">Female</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label  {{gender === 'Female' ? 'active-gender' : '' }}">
+                      <input type="radio" class="form-check-input"  name="gender" [(ngModel)]="gender" value="Undisclosed">Undisclosed</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Your Office Email</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Your Mobile Number</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-10">
+                    <div class="form-group">
+                      <label>&nbsp;</label>
+                      <div class="custom-droupdown dropdown btn-group" ngbDropdown>
+                        <button type="button" class="btn dropdown-toggle cust-toggle" ngbDropdownToggle>
+                          <span class="selected-name"> Degree </span>
+                          <span class="caret"></span>
+                        </button>
+                        <div ngbDropdownMenu class="dropdown-menu" role="menu">
+                          <a class="dropdown-item">M.D Paediatry</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="password" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Enter Password</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="password" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Confirm Password</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                    <label>Your Name as Registered with:</label>
+                    <div class="custom-droupdown dropdown btn-group" ngbDropdown>
+                      <button type="button" class="btn dropdown-toggle cust-toggle" ngbDropdownToggle>
+                        <span class="selected-name">Degree</span>
+                        <span class="caret"></span>
+                      </button>
+                      <div ngbDropdownMenu class="dropdown-menu" role="menu">
+                        <a class="dropdown-item">Maharashtra Medical</a>
+                        <a class="dropdown-item">Gujrat Medical </a>
+                        <a class="dropdown-item">Madhyapradesh Medical </a>
+                        <a class="dropdown-item">Chattisgarh Medical </a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                    <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                    <label>State Medical Council</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-10">
+                    <div class="form-group">
+                      <label>&nbsp;</label>
+                      <div class="custom-droupdown dropdown btn-group" ngbDropdown>
+                        <button type="button" class="btn dropdown-toggle cust-toggle" ngbDropdownToggle>
+                          <span class="selected-name">State Medical Council</span>
+                          <span class="caret"></span>
+                        </button>
+                        <div ngbDropdownMenu class="dropdown-menu" role="menu">
+                          <a class="dropdown-item">Maharashtra Medical</a>
+                          <a class="dropdown-item">Gujarat Medical </a>
+                          <a class="dropdown-item">Madhyapradesh Medical </a>
+                          <a class="dropdown-item">Chattisgarh Medical </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="form-group">
+                        <label>&nbsp;</label>
+                        <div class="custom-droupdown dropdown btn-group" ngbDropdown>
+                          <button type="button" class="btn dropdown-toggle cust-toggle" ngbDropdownToggle>
+                            <span class="selected-name"> Year </span>
+                            <span class="caret"></span>
+                          </button>
+                          <div ngbDropdownMenu class="dropdown-menu" role="menu">
+                            <a class="dropdown-item">1981</a>
+                            <a class="dropdown-item">1982</a>
+                            <a class="dropdown-item">1983</a>
+                            <a class="dropdown-item">1984</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Registration Number</label>
+                </div>
+              </div>              
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-10">    
+                    <div class="form-group animateLabel">
+                      <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                      <label>Valid Upto</label>
+                      <!-- <ngb-datepicker [displayMonths]="displayMonths" [navigation]="navigation"></ngb-datepicker> -->
+                      <i _ngcontent-c19="" class="fa fa-calendar-o calendarbg"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Your Speciality</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group animateLabel">
+                  <input type="text" class="form-control animateInput" (focus)="addLabelClass($event)" (blur)="removeLabelClass($event)">
+                  <label>Your Sub-Speciality</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="terms-line">By proceeding you agree with OPD Clinic’s Terms of Use and acknowledge that you have read the privacy policy.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 footer-part">
+            <button type="button" class="btn-primary opd-primary-btn btn-md" (click)="submitInfoBtn();">Submit</button>
+            <button type="button" class="btn-primary opd-secondary-btn btn-md clear-from-btn">clear form</button>
+            <a href="#" class="confirmOTP">Confirm OTP <span><i _ngcontent-c19="" class="fa fa-angle-right"></i></span></a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--confirm info section(start here) -->
+    <div class="col-12" *ngIf="confirmInfoSec">
+      <h3 class="inner-header">Confirm your information</h3>
+      <form>
+        <div class="row">
+          <div class="col-5 col-md-6 col-lg-4">
+            <div class="form-group mb-4">
+              <label>Enter OTP</label>
+              <div class="row">
+                <div class="col-2">
+                  <input type="password" class="form-control otp-textbox" placeholder="*" name="">
+                </div>
+                <div class="col-2">
+                  <input type="password" class="form-control otp-textbox" placeholder="*" name="">
+                </div>
+                <div class="col-2">
+                  <input type="password" class="form-control otp-textbox" placeholder="*" name="">
+                </div>
+                <div class="col-2">
+                  <input type="password" class="form-control otp-textbox" placeholder="*" name="">
+                </div>
+                <div class="col-2">
+                  <input type="password" class="form-control otp-textbox" placeholder="*" name="">
+                </div>
+                <div class="col-2">
+                  <input type="password" class="form-control otp-textbox" placeholder="*" name="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="terms-line">Please wait for couple of minutes to receive the OTP. If you do not receive OTP,
+              <a class="req-otp" (click)="reqOtp();">Request OTP</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-3">
+            <button type="button" class="btn-primary opd-primary-btn btn-md" (click)="confirmOTP()">Submit</button>
+            <button type="button" class="btn-primary opd-secondary-btn btn-md ml-2" (click)="goBackBtn();">Go back</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--Basic info thank you section(start here) -->
+    <div class="col-12" *ngIf="thankYouSection">
+      <div class="thankYouSection">
+        <div class="successOuer">
+          <div class="success">
+            <span></span>
+          </div>
+        </div>
+        <h2 class="inner-header">Confirmation</h2>
+        <p>Medical Council confirmed the registration No. 6730923-2007<br /> of 1986 in the name of <b>Dr. Rashmi A. Gapchup.</b></p>
+        <p>Your registration number with Copious Health-Care is <b>CHC-023423,</b> in Paediatrics.<br /> Kids are waiting for you to take care!! </p>
+        <p><b>COPIOUS HEALTH-CARE</b></p>
+      </div>
+      <div class="row">
+          <div class="col-12 mt-3">
+            <a class="btn-primary opd-primary-btn btn-md" routerLink="/doctor/dashboard">View Dashboard</a>
+            <a class="btn-primary opd-secondary-btn btn-md ml-2" routerLink="/doctor/profile/CliniciansProfile">Complete Profile</a>
+          </div>
+        </div>
+    </div>
+
+    <!--info not verified section(start here) -->
+    <div class="col-12" *ngIf="infoNotVerified">
+      <h3 class="inner-header">information is not verified</h3>
+      <form>
+        <div class="row">
+          <div class="col-12">
+            <p class="refile-info">
+              Refill the information if the details are still not matching.
+              <br> On confirmation we will get back to you.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-3">
+            <button type="button" class="btn-primary opd-primary-btn btn-md" (click)="backToForm();">Back to form</button>
+            <a routerLink="/" type="button" class="btn-primary opd-secondary-btn btn-md ml-2" >Cancel</a>
+          </div>
+        </div>
+      </form>
+    </div>    
+  </div>
+</div>
